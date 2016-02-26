@@ -1,4 +1,24 @@
 I=imread('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Deepthi\Gesture1\variant1.png');
+<<<<<<< HEAD
 i=imresize(I,[256,256]);
 imshow(i);
 blockproc
+=======
+img=imresize(I,[256,256]);
+
+
+fun = @(block_struct) procblock(block_struct.data);
+B=blockproc(img,[16 16],fun,'UseParallel',true);
+
+for j=1:16
+     for i=1:256
+         B(i,j)
+imshow(C);
+
+
+
+
+
+
+
+>>>>>>> refs/remotes/origin/deepthi
