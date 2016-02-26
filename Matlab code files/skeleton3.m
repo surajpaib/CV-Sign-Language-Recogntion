@@ -201,13 +201,14 @@ imwrite(final,'C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Suraj\Gestur
  A=jointCoordinates1;
  B=jointCoordinates2;    
  C=jointCoordinates3;
-%  try
+try
  xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Suraj\Gesture3\variant11.xls',A,1);
-%  catch
-%      warning('Late Start');
-%  end
- xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Pritika\Gesture3\variant11.xls',B,2);
+  xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Pritika\Gesture3\variant11.xls',B,2);
  xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Pritika\Gesture3\variant11.xls',C,3);
+catch
+      warning('Data not saved');  
+end
+
  
 
  
