@@ -1,9 +1,8 @@
 I=imread('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Deepthi\Gesture1\variant1.png');
-<<<<<<< HEAD
+
 i=imresize(I,[256,256]);
 imshow(i);
-eleghlehgli
-=======
+
 img=imresize(I,[256,256]);
 
 
@@ -32,4 +31,3 @@ imshow(C);
 
 
 
->>>>>>> refs/remotes/origin/deepthi
