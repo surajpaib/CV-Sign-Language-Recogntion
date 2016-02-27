@@ -188,7 +188,7 @@ rectangle('Position',pos);
 f=imcrop(BW,pos);
 final=imresize(f,[500 350]);
 imshow(final);
-imwrite(final,'C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variant\Hello\variant1.png','png');
+imwrite(final,'C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variants\Hello\variant1.png','png');
 %  CC = bwconncomp(BW)
 %  stats=regionprops(BW,'Extrema');
 %  hold on;
@@ -202,9 +202,9 @@ imwrite(final,'C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variant\Hell
  B=jointCoordinates2;    
  C=jointCoordinates3;
 try
- xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variant\Hello\variant1.xls',A,1);
-  xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variant\Hello\variant1.xls',B,2);
- xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variant\Hello\variant1.xls',C,3);
+ xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variants\Hello\variant1.xls',A,1);
+  xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variants\Hello\variant1.xls',B,2);
+ xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variants\Hello\variant1.xls',C,3);
 catch
       warning('Data not saved');  
 end
