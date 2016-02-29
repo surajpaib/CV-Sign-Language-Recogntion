@@ -188,14 +188,16 @@ rectangle('Position',pos);
 f=imcrop(BW,pos);
 final=imresize(f,[500 350]);
 imshow(final);
-imwrite(final,'C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Kunal\Gesture3\variant10.png','png');
 
+
+
+imwrite(final,'C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variants\Hello\variant16.png','png');
  A=jointCoordinates1;
  B=jointCoordinates2;    
  C=jointCoordinates3;
- xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Kunal\Gesture3\variant10.xls',A,1);
-  xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Kunal\Gesture3\variant10.xls',B,2);
- xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Kunal\Gesture3\variant10.xls',C,3);
+ xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variants\Hello\variant16.xls',A,1);
+  xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variants\Hello\variant16.xls',B,2);
+ xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variants\Hello\variant16.xls',C,3);
 
 
  
