@@ -1,4 +1,4 @@
-I=imread('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Deepthi\Gesture1\variant1.png');
+I=imread('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Deepthi\Gesture1\variant8.png');
 
 i=imresize(I,[256,256]);
 imshow(i);
@@ -15,9 +15,9 @@ for j=1:16
      for i=1:4096
          C(k,1)=B(i,j);
          
-         if (k>=256)
+         if (k>=1024)
              
-          xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Suraj\Gesture1\dataset1.xls',C,count);   
+          xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Deepthi\Gesture1\dataset1.xls',C,count,'H1:H1024');   
           k=1;
           count=count+1;
          else
