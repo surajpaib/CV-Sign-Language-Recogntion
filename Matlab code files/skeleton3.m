@@ -188,26 +188,17 @@ rectangle('Position',pos);
 f=imcrop(BW,pos);
 final=imresize(f,[500 350]);
 imshow(final);
-imwrite(final,'C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Suraj\Gesture3\variant11.png','png');
-%  CC = bwconncomp(BW)
-%  stats=regionprops(BW,'Extrema');
-%  hold on;
 
-% 	 %Find the bounding box of each blob.
-% 	thisBlobsBoundingBox = stats(6).BoundingBox;  
-% 	rectangle('Position', thisBlobsBoundingBox);
-% 
-% hold off;
+
+
+imwrite(final,'C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variants\Hello\variant16.png','png');
  A=jointCoordinates1;
  B=jointCoordinates2;    
  C=jointCoordinates3;
-try
- xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Suraj\Gesture3\variant11.xls',A,1);
-  xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Pritika\Gesture3\variant11.xls',B,2);
- xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Pritika\Gesture3\variant11.xls',C,3);
-catch
-      warning('Data not saved');  
-end
+ xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variants\Hello\variant16.xls',A,1);
+  xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variants\Hello\variant16.xls',B,2);
+ xlswrite('C:\Users\Suraj\OneDrive\Documents\8th Sem\Repository\Variants\Hello\variant16.xls',C,3);
+
 
  
 
