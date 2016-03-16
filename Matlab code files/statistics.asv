@@ -1,0 +1,3 @@
+statanal();
+
+G1
