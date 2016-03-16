@@ -1,20 +1,20 @@
-[m,s,v]=statistics()
+[m,s,v,k,sk]=statistics()
 
 figure
 xlabel('X coordinate','FontSize',12,'FontWeight','bold');
 ylabel('Y coordinate','FontSize',12,'FontWeight','bold');
 zlabel('Z coordinate','FontSize',12,'FontWeight','bold');
 
-title('Difference in std.deviation between 3D coordinates of each of the 10 joints for 3 gestures for  ','FontSize',12,'FontWeight','bold','Color','b');
-x1=s(:,1,1);
-y1=s(:,2,1);
-z1=s(:,3,1);
-x2=s(:,1,2);
-y2=s(:,2,2);
-z2=s(:,3,2);
-x3=s(:,1,3);
-y3=s(:,2,3);
-z3=s(:,3,3);
+title('Difference in Kurtosis between 3D coordinates of each of the 10 joints for 3 gestures for  ','FontSize',12,'FontWeight','bold','Color','b');
+x1=k(:,1,1);
+y1=k(:,2,1);
+z1=k(:,3,1);
+x2=k(:,1,2);
+y2=k(:,2,2);
+z2=k(:,3,2);
+x3=k(:,1,3);
+y3=k(:,2,3);
+z3=k(:,3,3);
 view(3);
 
 k1=zeros(1,3,10);
