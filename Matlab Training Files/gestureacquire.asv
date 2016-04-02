@@ -1,0 +1,58 @@
+
+
+
+
+GData=zeros(10,3,120);
+%%% For Gesture 1
+for i=1:12
+GData(10,3,i)=xlsread(['Repository\Deepthi\Gesture1\variant',num2str(i),'.xls'],'A3:C12');
+end
+for i=1:12
+GData(10,3,i+12)=xlsread(['Repository\Pritika\Gesture1\variant',num2str(i),'.xls'],'A3:C12');
+end
+for i=1:12
+GData(10,3,i+24)=xlsread(['Repository\Suraj\Gesture1\variant',num2str(i),'.xls'],'A3:C12');
+end
+for i=1:4
+GData(10,3,i+36)=xlsread(['Repository\Variants\Hello\variant',num2str(i),'.xls'],'A3:C12');
+end
+%% For Gesture 2
+for i=1:12
+GData(10,3,i)=xlsread(['Repository\Deepthi\Gesture2\variant',num2str(i),'.xls'],'A3:C12');
+end
+for i=1:12
+GData(10,3,i+12)=xlsread(['Repository\Pritika\Gesture2\variant',num2str(i),'.xls'],'A3:C12');
+end
+for i=1:12
+GData(10,3,i+24)=xlsread(['Repository\Suraj\Gesture2\variant',num2str(i),'.xls'],'A3:C12');
+end
+for i=1:4
+GData(10,3,i+36)=xlsread(['Repository\Variants\Welcome\variant',num2str(i),'.xls'],'A3:C12');
+end
+
+
+%% For Gesture 3
+for i=1:12
+GData(10,3,i)=xlsread(['Repository\Deepthi\Gesture3\variant',num2str(i),'.xls'],'A3:C12');
+end
+for i=1:12
+GData(10,3,i+12)=xlsread(['Repository\Pritika\Gesture3\variant',num2str(i),'.xls'],'A3:C12');
+end
+for i=1:12
+GData(10,3,i+24)=xlsread(['Repository\Suraj\Gesture3\variant',num2str(i),'.xls'],'A3:C12');
+end
+for i=1:4
+GData(10,3,i+36)=xlsread(['Repository\Variants\Good\variant',num2str(i),'.xls'],'A3:C12'));
+end
+
+
+%% Load datasets into a .mat file
+GData2=zeros(30,120);
+GData1=GData([1 2 3 7 8],:,:);
+for i=1:120
+    GData
+
+
+save(gestacquire.mat);
+
+
