@@ -1,5 +1,3 @@
-
-
 function [m,s,v,k,sk]=statistics()
 clear all; close all;
 [G1,G2,G3]=statanal();
@@ -25,6 +23,7 @@ meanlist(i,1,3)=mean(G3(i,1,:));
 meanlist(i,2,3)=mean(G3(i,2,:));
 meanlist(i,3,3)=mean(G3(i,3,:));
 end
+
 %%%%variance
 for i=1:10
 varlist(i,1,1)=var(G1(i,1,:));
