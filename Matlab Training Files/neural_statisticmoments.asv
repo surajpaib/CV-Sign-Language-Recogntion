@@ -1,0 +1,16 @@
+load(
+
+net=patternnet([4 4],'trainscg','mse');
+  
+    net.trainParam.show = 50;
+net.trainParam.lr = 0.05;
+net.trainParam.epochs = 300;
+net.trainParam.goal = 1e-5;
+    [net,tr]=train(net,x,t,'UseParallel','yes');
+    
+    y=net(x,'UseParallel','yes');
+    view(net)
+    figure
+plotconfusion(t,y)
+figure
+plotperform(tr)
