@@ -1,0 +1,27 @@
+1. costFunction.m
+Function to implement the J(theta)-Classification cost and find grad. The gradient at a particular theta
+This function gets parameters from maintrain and fmincg
+
+2.maintrain.m
+
+Function to load datasets- X,Xvalidation and Xtest. Splits the data sets and starts the training algorithm that extracts grad and cost values from costFunction
+
+3. lambdavalidation.m
+
+Takes trained values of theta from maintrain.m after training over n iterations. Uses this lambda value to find training, validation and test accuracy to select the best model for all tried values of lambda
+
+4. mean2.m
+
+Gets the Statistical data from gesture coordinates. Namely- mean, variance, skewness, kurtosis.
+
+5. gestacquire.m
+
+Gets the gesture data and transforms into a workable matrix 
+
+6.sigmoid.m
+
+Find the sigmoid of a function
+
+7. randInitializeWeights.m
+
+Intializes random weights to a matrix

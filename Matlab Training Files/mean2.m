@@ -53,7 +53,10 @@ end;
 Neuralinput = vertcat(Mean,V,S,K);  
 X = mapminmax(Neuralinput,0,1);
 % Normalizing between -1 to +1
-save('neuralinput.mat','X');
+Y(1,1:40)=1;
+Y(2,41:80)=1;
+Y(3,81:120)=1;
+save('neuralinput.mat');
 
 
 
