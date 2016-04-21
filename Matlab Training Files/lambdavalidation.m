@@ -29,14 +29,13 @@ testerror(i)=(1-mean(double(predtest == ytest)));
 end
 figure
 hold on
-toc
-elapsedtime=toc
+toc 
 plot(lambda,trainingerror(:,1),'Color','b');
 
 plot(lambda,validationerror(:,1),'Color','r');
 plot(lambda,testerror(:,1),'Color','g');
 title('Training and Validation error plotted against lambda');
-xlabel('lambda');
+xlabel('lambda');   
 ylabel('Error percentage');
 
 hold off
