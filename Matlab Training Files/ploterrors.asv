@@ -1,0 +1,8 @@
+load('errorvectors.mat');
+
+
+l=size(trainingerror);
+
+
+hold on
+plot(1

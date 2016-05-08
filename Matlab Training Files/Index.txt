@@ -25,3 +25,27 @@ Find the sigmoid of a function
 7. randInitializeWeights.m
 
 Intializes random weights to a matrix
+
+8.gesturecoordinatio.mat
+
+The X, Y matrices for 30 Gesture Features
+
+9. iovalues.mat
+
+The X,Y matrices for 180 statistical features
+
+10. validationprocess.m
+
+Script to run optimizations on validation set.
+
+11. svmTrain and svmPredict
+
+SVM training function and prediction function based on the SMO Algorithm
+
+12. svmtraining.m
+
+Script(function) to run an SVM implementation and give the validation and training error as the output.
+
+13. gaussianKernel.m
+
+Kernel Implementation for SVM 

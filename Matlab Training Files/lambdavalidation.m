@@ -1,7 +1,7 @@
 tic
 close all;
 clear all;
-lambda=0:10e-6:10e-3;
+lambda=0:10e-9:10e-6;
 n=size(lambda,2);
 validationerror=zeros(n);
 trainingerror=zeros(n);

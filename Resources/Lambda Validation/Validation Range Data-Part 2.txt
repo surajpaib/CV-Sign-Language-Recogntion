@@ -1,0 +1,7 @@
+Lambda Range: 0:10e-9:10e-6;
+Elapsed Time: 2035.056 seconds
+Min. Training Error: 0%
+Min. Validation Error: 33.3%
+Min. Test Error: 40%
+
+

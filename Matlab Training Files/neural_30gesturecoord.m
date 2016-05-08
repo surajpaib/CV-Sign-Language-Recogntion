@@ -8,8 +8,8 @@ Y(1,1:40)=1;
 Y(2,41:80)=1;
 Y(3,81:120)=1;
 
-input_layer=size(X);
-output_layer=size(Y);
+input_layer=size(X,1);
+output_layer=size(Y,1);
 hidden_layer=5;
 
 net=patternnet(hidden_layer,'traingdx','mse');
@@ -18,10 +18,10 @@ net=patternnet(hidden_layer,'traingdx','mse');
   
   
   
-  net.IW{1,1}=randInitializeWeights(hidden_layer,input_layer(1));
-  net.LW{2,1}=randInitializeWeights(output_layer(1),hidden_layer);
-  net.b{1,1}=randInitializeWeights(hidden_layer,1);
-  net.b{2,1}=randInitializeWeights(output_layer(1),1);
+  net.IW{1,1}=randInitializeWeights1(hidden_layer,input_layer);
+  net.LW{2,1}=randInitializeWeights1(output_layer,hidden_layer);
+  net.b{1,1}=randInitializeWeights1(hidden_layer,1);
+  net.b{2,1}=randInitializeWeights1(output_layer,1);
     
     
     tr.trainParam.show = 50;
@@ -29,15 +29,12 @@ tr.trainParam.lr = 0.05;
 tr.trainParam.epochs = 100;
 tr.trainParam.goal = 1e-5;
  tr.perParam.regularization=1;
-    [net,tr]=train(net,X,Y);
+    [net,tr]=train(net,X,Y,'useGPU','yes');
    
-    O=net(X,'UseParallel','yes');
+    O=net(X,'UseGPU','yes');
  
     view(net);
     
     
    figure
 
-plotconfusion(Y, O);
-
-plotperform(tr)
