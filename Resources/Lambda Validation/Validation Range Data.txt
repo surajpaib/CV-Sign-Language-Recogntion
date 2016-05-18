@@ -1,0 +1,9 @@
+Lambda Values Tested:
+lambda=0:10e-6:10e-3
+
+Elapsed Time:
+187.0537 seconds
+
+Training Error Minimum: 0%
+Min Validation Error: 33%
+Minimum Test Error: 26.7%
