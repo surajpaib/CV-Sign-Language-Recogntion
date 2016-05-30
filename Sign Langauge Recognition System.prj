@@ -1,0 +1,103 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="1099451376" file="C:\Users\Suraj\OneDrive\Documents\8th Sem\Matlab code files\Sign Langauge Recognition System.prj" location="C:\Users\Suraj\OneDrive\Documents\8th Sem\Matlab code files" name="Sign Langauge Recognition System" target="target.mlapps" target-name="Package App">
+    <param.appname>Sign Langauge Recognition System</param.appname>
+    <param.authnamewatermark>Suraj Pai</param.authnamewatermark>
+    <param.email>surajballambat@gmail.com</param.email>
+    <param.company>MIT</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary>An app</param.summary>
+    <param.description>App</param.description>
+    <param.screenshot>${PROJECT_ROOT}\Gesture raw images\im1.jpg</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name>
+      <item>MATLAB</item>
+      <item>Image Acquisition Toolbox</item>
+      <item>Image Processing Toolbox</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+      <item>78</item>
+      <item>17</item>
+    </param.products.id>
+    <param.products.version>
+      <item>8.3</item>
+      <item>4.7</item>
+      <item>9.0</item>
+    </param.products.version>
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}\Sign Langauge Recognition System.mlappinstall</param.output>
+    <param.guid>1d11129f-7968-4a30-bdb7-6a56ca9cd62d</param.guid>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\LiveDemofinal.m</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\initialization.m</file>
+      <file>${PROJECT_ROOT}\LiveDemofinal.fig</file>
+      <file>${PROJECT_ROOT}\svmPredict.m</file>
+      <file>${PROJECT_ROOT}\TrainedSVM.m</file>
+      <file>${PROJECT_ROOT}\trigger.m</file>
+    </fileset.depfun>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\gaussianKernel.m</file>
+      <file>${PROJECT_ROOT}\good.wav</file>
+      <file>${PROJECT_ROOT}\hello.wav</file>
+      <file>${PROJECT_ROOT}\welcome.wav</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\Suraj\OneDrive\Documents\8th Sem\Matlab code files" name="Sign Langauge Recognition System.mlappinstall" optional="false">C:\Users\Suraj\OneDrive\Documents\8th Sem\Matlab code files\Sign Langauge Recognition System.mlappinstall</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>F:\MATLAB2014</root>
+      <toolboxes>
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
